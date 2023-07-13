@@ -1,0 +1,28 @@
+.header {
+  &__card:nth-child(2) {
+    margin-left: auto;
+    max-width: 70%;
+  }
+
+  &__card:nth-child(1) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-top {
+  display: flex;
+  column-gap: 64px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+
+  &__link {
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--grey-color);
+  }
+
+  @media (max-width: 920px) {
+    column-gap: 30px;
+  }
+}

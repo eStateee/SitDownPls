@@ -1,0 +1,99 @@
+.burger { @include burger; } /* stylelint-disable */
+
+.nav-bottom {
+  @include small-tablet {
+    display: none;
+  }
+}
+
+.menu--active {
+  padding: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  top: 5px;
+  min-height: 300px;
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+  box-sizing: border-box;
+  background: #fff;
+}
+.burger-content {
+  padding: 60px 72px;
+  @include mobile {
+    padding: 50px 12px 0;
+  }
+}
+.burger {
+  // * Кастомные стили
+  --burger-width: 24px;
+  --burger-height: 24px;
+  --burger-line-height: 4px;
+  z-index: 5;
+
+  &::before,
+  &::after,
+  &__line {
+
+
+    border-radius: 10px;
+    background-color: var(--purple-color);
+  }
+}
+
+.nav-bottom__link {
+  @include small-tablet {
+    color: var(--dark-color);
+  }
+}
+.nav-bottom__ul {
+  @include small-tablet {
+    display: block;
+    column-count: 2;
+    position: relative;
+    padding-right: 47%;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../img/burger-img.svg');
+      width: 161px;
+      height: 112px;
+      top: 70px;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  @include mobile {
+    column-count: 1;
+  }
+}
+.nav-bottom__li {
+  @include small-tablet {
+    &:not(:nth-child(3n)) {
+      margin-bottom: 30px;
+    }
+  }
+  @include mobile {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    &:last-child {
+      margin-bottom: 25px;
+    }
+
+  }
+}
+.menu-wrapper {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}

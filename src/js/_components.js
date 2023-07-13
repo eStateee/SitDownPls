@@ -1,0 +1,13 @@
+// console.log('components');
+import './components/hero-swiper'
+import './components/header-city-choices'
+import './components/header-category-choices'
+import './components/offers-swiper'
+import './components/usefull-swiper'
+import './components/welcome-form-mask'
+import './components/catalog-swiper'
+import './components/catalog-range-slider'
+import './components/catalog-choices'
+import './components/detail-swiper'
+import './components/modal-submit'
+import './components/similar-swiper'

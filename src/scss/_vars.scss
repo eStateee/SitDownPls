@@ -1,0 +1,28 @@
+/* stylelint-disable */
+:root {
+  // base
+  --font-family: "sans-regular", sans-serif;
+  --content-width: 1280px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // fonts
+  --sans-bold: "sans-bold", sans-serif;
+  --sans-semi: "sans-semi", sans-serif;
+  --playfair: "playfair", sans-serif;
+  // colors
+  --light-color: #fff;
+  --purple-color: #a65cf0;
+  --black-color: #333;
+  --grey-color: #999;
+  --semi-grey-color: #F7F7F7;
+  --gold-color: #d5b986;
+  --orange-color: #ff862f;
+  --light-purple-color: #c998fb;
+  --dark-purple-color: #7033ac;
+  --light-grey-color: #eaeaea;
+
+  // grid
+  --grid: repeat(12, 1fr);
+}
+
+

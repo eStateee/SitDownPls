@@ -1,0 +1,14 @@
+.usefull {
+  &-container {
+    padding: 35px 0;
+
+    @include mobile {
+      padding: 47px 0 32px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    max-width: 60%;
+  }
+}

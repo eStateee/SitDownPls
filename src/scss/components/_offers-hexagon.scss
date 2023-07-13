@@ -1,0 +1,58 @@
+.hexagon {
+  position: relative;
+  min-width: 80px;
+  min-height: 34px;
+  background-color: var(--orange-color);
+
+  &-wrapper {
+    position: absolute;
+    top: 32px;
+    z-index: 2;
+  }
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  color: var(--light-color);
+}
+
+.hexagon::after {
+  left: 19px;
+  bottom: -10px;
+  font-family: var(--sans-bold);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.hexagon::before {
+  left: 100%;
+  border-left: 11px solid var(--orange-color);
+}
+
+.hex-1::after {
+  content: "- 9 000";
+}
+
+.hex-2::after {
+  content: "- 10 000";
+}
+
+.hex-3::after {
+  content: "- 600";
+}
+
+.hex-4::after {
+  content: "- 300";
+}
+
+.hex-5::after {
+  content: "- 10 000";
+}
+
+.hex-6::after {
+  content: "- 700";
+}

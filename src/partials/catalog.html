@@ -1,0 +1,38 @@
+<section class="catalog">
+  <div class="container">
+    <p class="title-reset catalog-category">Главная / Каталог / Диваны / <span class="catalog-category-accent">Прямые
+        диваны</span></p>
+    <div class="catalog-grid">
+      <div class="catalog-card">
+        @include('catalog/catalog-filter.html')
+        @include('catalog/mobile-catalog-filter.html')
+        <div class="catalog-img">
+          <div class="catalog-bcg"></div>
+          <div class="catalog-img-content">
+            <p class="title-reset catalog-img__title">Оксфорд 1950</p>
+            <span class="catalog-img__descr">Новая коллекция изысканных кресел</span>
+            <a href="#" class="link-reset catalog-img__btn arrow-btn-anim"> <span>В каталог</span>
+              <svg class="catalog-img__btn-svg" width="32" height="32" viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="u">
+                  <circle class="arrow-circle" cx="16" cy="16" r="15" fill="#333" stroke="#A65CF0" stroke-width="2" />
+                  <path d="M14 11L19 16L14 21" class="arrow-path" stroke="#A65CF0" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath>
+                    <rect width="32" height="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-card catalog-content">
+        @include('catalog/right-catalog.html')
+
+      </div>
+    </div>
+  </div>
+</section>

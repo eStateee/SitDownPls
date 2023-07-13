@@ -1,0 +1,138 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.filters {
+  &-price__inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include tablet {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
+  &-price__label {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+    border-radius: 2px;
+    padding: 0 10px;
+    width: 86px;
+    height: 30px;
+
+    &:focus-within {
+      border: 1px solid var(--purple-color);
+      background-color: var(--light-purple-color);
+    }
+
+    &:hover {
+      border-color: var(--purple-color);
+    }
+  }
+
+  &-price__text {
+    font-size: 14px;
+    color: #808080;
+  }
+
+  &-price__text:first-child {
+    margin-right: 21px;
+  }
+
+  &-price__input {
+    border: none;
+    font-size: 14px;
+    color: #4d4d4d;
+
+    &:focus-visible {
+      background-color: var(--light-purple-color);
+    }
+  }
+
+  &-price__title {
+    margin-bottom: 20px;
+  }
+
+  &-price__slider {
+    margin-bottom: 20px;
+  }
+
+  &-price-content {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &-price-content:first-child {
+    @include tablet {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.noUi-connect {
+  background-color: var(--purple-color);
+}
+
+.noUi-target {
+  border: none;
+  border-radius: 100px;
+  height: 3px;
+  box-shadow: none;
+  background-color: #bfbfbf;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-handle {
+  border: 3px solid var(--purple-color);
+  border-radius: 100%;
+  width: 0;
+  height: 0;
+  box-shadow: none;
+  background-color: #fff;
+  cursor: pointer;
+
+  &:focus-visible {
+    border: 3px solid var(--purple-color);
+    background-color: var(--light-purple-color);
+  }
+
+  &:hover:not(:active) {
+    border-color: var(--dark-purple-color);
+    background-color: var(--purple-color);
+  }
+
+  &:active {
+    border-color: var(--light-purple-color);
+    background-color: var(--dark-purple-color);
+  }
+
+  &:active ~ .noUi-connect {
+    background-color: var(--dark-purple-color);
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -10px;
+  width: 22px;
+  height: 22px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
+}

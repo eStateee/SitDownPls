@@ -1,0 +1,42 @@
+.header {
+  &-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: var(--grid);
+  }
+
+  &-container-top {
+    padding: 15px 0;
+  }
+
+  &-about {
+    background-color: var(--semi-grey-color);
+  }
+
+  &__city {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black-color);
+  }
+
+  &-region__phone {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--orange-color);
+
+    &-svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--orange-color);
+    }
+  }
+}
+
+.header-city-content {
+  display: flex;
+  margin-bottom: 17px;
+}

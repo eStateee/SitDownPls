@@ -1,0 +1,13 @@
+:root {
+  @include tablet {
+    --content-width: 952px;
+  }
+
+  @include small-tablet {
+    --content-width: 624px;
+  }
+
+  // @media (max-width: 400px) {
+  //   --content-width: 295px;
+  // }
+}

@@ -1,0 +1,73 @@
+.usefull-slide {
+  background-color: var(--semi-grey-color);
+
+  &__img {
+    border-radius: 10px 10px 0 0;
+    height: 426px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      height: 202px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    min-height: 250px;
+    box-sizing: border-box;
+
+    @include tablet {
+      padding-bottom: 25px;
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+    border: 2px solid var(--purple-color);
+    border-radius: 10px;
+    padding: 16px 34px;
+    font-family: var(--sans-semi);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--purple-color);
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--black-color);
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &-img-1 {
+    background-image: url("../img/usefull-1.png");
+  }
+
+  &-img-2 {
+    background-image: url("../img/usefull-2.png");
+  }
+
+  &-img-3 {
+    background-image: url("../img/usefull-3.png");
+  }
+
+  &-img-4 {
+    background-image: url("../img/usefull-4.png");
+  }
+
+  &-img-5 {
+    background-image: url("../img/usefull-5.png");
+  }
+}

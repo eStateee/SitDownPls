@@ -1,0 +1,55 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// nouislider
+@import "./components/nouislider";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/header-city-choices";
+@import "./components/header-top-nav";
+@import "./components/header-category-choices";
+@import "./components/header-bottom-nav";
+@import "./components/header-search";
+@import "./components/hero-swiper";
+@import "./components/offers";
+@import "./components/offers-swiper";
+@import "./components/offers-hexagon";
+@import "./components/rating";
+@import "./components/collection";
+@import "./components/categories-grid";
+@import "./components/categories-card";
+@import "./components/categories";
+@import "./components/usefull";
+@import "./components/usefull-swiper";
+@import "./components/usefull-card";
+@import "./components/welcome";
+@import "./components/welcome-form";
+@import "./components/welcome-checkbox";
+@import "./components/footer";
+@import "./components/footer-nav";
+
+// подключения компонентов страницы каталога
+@import "./components/catalog/catalog";
+@import "./components/catalog/swiper";
+@import "./components/catalog/filters";
+@import "./components/catalog/range-slider";
+@import "./components/catalog/mobile-catalog-choices";
+
+// подключения компонентов страницы детальной страницы товара
+@import "./components/detail/detail";
+@import "./components/detail/detail-swiper";
+@import "./components/detail/detail-item-spec";
+@import "./components/detail/similar-swiper";
+@import "./components/detail/detail-modal";
+@import "./components/animation";
+
+// media
+@import "./components/vars-media";
+@import "./components/header-mobile";
+
+// burger
+@import "./components/burger";

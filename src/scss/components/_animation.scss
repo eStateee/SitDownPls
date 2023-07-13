@@ -1,0 +1,315 @@
+:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.header-nav-anim,
+.header-city-choices__item--selectable,
+.header-city-choices::after,
+.header-city-choices__item--choice,
+.header-phone-anim,
+.header-region__phone-svg,
+.header-form-anim,
+.header-category-choices[data-type*="select-one"]::after,
+svg,
+path,
+.btn-anim-transp,
+.btn-anim,
+.footer-soc__svg,
+.categ-card__btn span,
+.arrow-path,
+.arrow-circle,
+.header-category-choices__inner,
+.catalog-choices__inner,
+.catalog-choices[data-type*="select-one"]::after,
+.catalog-agreement,
+.catalog-checkmark,
+.swiper-pag-bullet,
+.noUi-handle,
+.filters-price__input,
+.filters-price__label,
+.catalog-img__btn {
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+// Header
+.header-nav-anim {
+  &:focus-visible:not(:active) {
+    color: var(--dark-purple-color);
+    background-color: #ebd1ff;
+  }
+
+  &:hover:not(:focus):not(:active) {
+    color: var(--purple-color);
+  }
+
+  &:active {
+    color: var(--dark-purple-color);
+  }
+}
+
+.header-city-choices {
+  // hover
+  &:hover:not(:focus):not(:active) .header-city--single {
+    color: var(--light-purple-color);
+  }
+
+  // ::after hover state
+  &:hover:not(:focus):not(:active)::after {
+    border-color: var(--light-purple-color);
+  }
+
+  // active color
+  &[aria-expanded*="false"]:active .header-city--single {
+    color: var(--dark-purple-color);
+  }
+
+  // focus-visible background-color
+  &[aria-expanded*="false"]:focus-visible:not(:hover):not(:active) &__inner {
+    background-color: #ebd1ff;
+  }
+
+  // focus-visible color
+  &[aria-expanded*="false"]:focus-visible:not(:hover):not(:active) .header-city--single {
+    color: var(--dark-purple-color);
+  }
+
+  // ::after focus-visible state
+  &[aria-expanded*="false"]:focus-visible:not(:hover):not(:active)::after {
+    border-color: var(--dark-purple-color);
+  }
+
+  // ::after active state
+  &[aria-expanded*="false"]:active:not(:focus-visible)::after {
+    border-color: var(--dark-purple-color);
+  }
+}
+
+.header-city-choices__item--choice {
+  &:focus-visible {
+    color: var(--dark-purple-color);
+  }
+
+  &:hover:not(:focus):not(:active) {
+    color: var(--light-purple-color);
+  }
+}
+
+.header-city-choices__item--choice.is-highlighted {
+  color: var(--dark-purple-color);
+}
+
+.header-phone-anim {
+  &:focus-visible:not(:hover):not(:active) {
+    color: var(--orange-color);
+    background-color: #fff5d1;
+  }
+
+  &:hover:not(:focus):not(:active) {
+    color: #ffbd59;
+  }
+
+  &:hover:not(:focus):not(:active) .header-region__phone-svg {
+    fill: #ffbd59;
+  }
+
+  &:active {
+    color: #bb370e;
+  }
+
+  &:active .header-region__phone-svg {
+    fill: #bb370e;
+  }
+}
+
+.header-form-anim {
+  &:focus-visible:not(:hover):not(:active) {
+    outline: 2px solid var(--purple-color);
+    outline-offset: -2px;
+  }
+
+  &:hover {
+    background-color: var(--light-grey-color);
+  }
+
+  &:active .header-form__input-svg {
+    fill: var(--purple-color);
+  }
+}
+
+.header-user__profile {
+  &:focus-visible:not(:hover):not(:active) svg {
+    fill: #fff;
+  }
+
+  &:focus-visible:not(:hover):not(:active) {
+    background-color: var(--light-purple-color);
+  }
+
+  &:hover:not(:focus):not(:active) svg {
+    fill: var(--light-purple-color);
+  }
+}
+
+.header-user__cart {
+  &:focus-visible:not(:hover):not(:active) {
+    background-color: var(--light-purple-color);
+  }
+
+  &:focus-visible:not(:hover):not(:active) &-path {
+    fill: #fff;
+  }
+
+  &:hover:not(:focus):not(:active) &-path {
+    fill: var(--light-purple-color);
+  }
+
+  &:active &-path {
+    fill: var(--dark-purple-color);
+  }
+}
+
+.btn-anim {
+  outline: 2px solid var(--purple-color);
+  outline-offset: -2px;
+
+  &:focus-visible:not(:hover):not(:active) {
+    outline: 2px solid var(--dark-purple-color);
+    background-color: var(--light-purple-color);
+  }
+
+  &:hover:not(:focus):not(:active) {
+    outline-color: var(--light-purple-color);
+    background-color: var(--light-purple-color);
+  }
+
+  &:active {
+    outline-color: var(--dark-purple-color);
+    background-color: var(--dark-purple-color);
+  }
+}
+
+.btn-anim-transp {
+  &:focus-visible:not(:hover):not(:active) {
+    border: 2px solid var(--purple-color);
+    color: #fff;
+    background-color: var(--light-purple-color);
+  }
+
+  &:hover:not(:focus):not(:active) {
+    color: #fff;
+    background-color: var(--purple-color);
+  }
+
+  &:active {
+    border: 2px solid var(--dark-purple-color);
+    color: #fff;
+    background-color: var(--dark-purple-color);
+  }
+}
+
+.footer-svg-anim {
+  &:focus-visible svg {
+    fill: #fff;
+    background-color: var(--light-purple-color);
+  }
+
+  &:hover svg {
+    fill: var(--purple-color);
+  }
+
+  &:active svg {
+    fill: var(--dark-purple-color);
+  }
+}
+
+.categ-card__btn,
+.catalog-img__btn {
+  span {
+    border-bottom: 2px solid transparent;
+  }
+
+  &:hover span,
+  &:focus-visible:not(:active):not(:hover) span {
+    border-bottom: 2px solid var(--purple-color);
+  }
+
+  &:active {
+    color: var(--dark-purple-color);
+
+    span {
+      border-bottom: 2px solid var(--dark-purple-color);
+    }
+  }
+}
+
+.header-category-choices.is-focused {
+  &::after {
+    border-color: #fff;
+  }
+
+  .header-category-choices__inner {
+    border-color: var(--purple-color);
+    background-color: var(--light-purple-color);
+  }
+
+  .header-category--single {
+    color: #fff;
+  }
+}
+
+.header-category-choices.is-open {
+  .header-category-choices__inner {
+    border-color: var(--purple-color);
+    background-color: transparent;
+  }
+
+  .header-category--single {
+    color: var(--purple-color);
+  }
+}
+
+.header-category-choices {
+  &:hover &__inner {
+    border-color: var(--purple-color);
+  }
+}
+
+.header-category-choices__item--choice.is-highlighted {
+  color: var(--dark-purple-color);
+}
+
+.arrow-btn-anim {
+  &:focus-visible:not(:hover):not(:active) {
+    .arrow-circle {
+      fill: var(--light-purple-color);
+    }
+
+    .arrow-path {
+      stroke: #fff;
+    }
+  }
+
+  &:hover:not(:active) {
+    .arrow-circle {
+      fill: var(--purple-color);
+    }
+
+    .arrow-path {
+      stroke: #fff;
+    }
+  }
+
+  &:active {
+    .arrow-circle {
+      fill: var(--dark-purple-color);
+      stroke: var(--dark-purple-color);
+    }
+
+    .arrow-path {
+      stroke: #fff;
+    }
+  }
+}

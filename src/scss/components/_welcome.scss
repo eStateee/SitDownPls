@@ -1,0 +1,75 @@
+.welcome {
+  &-container {
+    padding: 19px 0 73px;
+
+    @include mobile {
+      padding-top: 36px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 11px;
+
+    @include small-tablet {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: var(--grid);
+    gap: 32px;
+
+    &::after {
+      content: "";
+      grid-column: 6 span;
+      margin-top: 27px;
+      background-image: url("../img/welcome-img.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @include tablet {
+        grid-column: 5 span;
+        margin-top: 77px;
+      }
+
+      @include small-tablet {
+        grid-column: 2 span;
+        margin-top: 11px;
+        background-image: url("../img/weclome-img-768.svg");
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(9, 1fr);
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__card {
+    grid-column: 6 span;
+
+    @include tablet {
+      grid-column: 4 span;
+    }
+
+    @include mobile {
+      grid-column: 6 span;
+    }
+  }
+}

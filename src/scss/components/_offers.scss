@@ -1,0 +1,25 @@
+.offers {
+  &-container {
+    padding: 35px 0;
+  }
+
+  &__top-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 21px;
+
+    @include mobile {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    max-width: 60%;
+
+    @include small-tablet {
+      max-width: 80%;
+    }
+  }
+}

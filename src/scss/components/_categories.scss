@@ -1,0 +1,17 @@
+.categories {
+  &-container {
+    padding: 70px 0 35px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+}
+
+.categ-small-svg {
+  display: none;
+
+  @include mobile {
+    display: inline;
+  }
+}

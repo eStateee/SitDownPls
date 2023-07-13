@@ -1,0 +1,45 @@
+.header {
+  &-big {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &-container-bottom {
+    padding: 30px 0;
+  }
+
+  &-nav__card:nth-child(2) {
+    margin-left: auto;
+    max-width: 82%;
+  }
+}
+
+.nav-bottom {
+  &__ul {
+    display: flex;
+    column-gap: 92px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 15px;
+
+    @include big-desktop {
+      column-gap: 65px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--black-color);
+
+    @include medium-tablet {
+      font-size: 14px;
+    }
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+  }
+}
